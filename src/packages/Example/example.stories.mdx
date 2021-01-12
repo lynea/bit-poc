@@ -1,0 +1,19 @@
+import { Meta, Story } from "@storybook/addon-docs/blocks";
+import Example from "./Example.component.tsx";
+import { StyledBackground } from "./story-helpers/Background.tsx";
+
+<Meta title="Organisms/Example" />
+
+# Example organism
+
+<Story name="Example organism">
+  <StyledBackground>
+    <Example
+      title="Tab the button for a surprise"
+      bodyText="But remember stupid people win stupid prices. "
+      centerSrc="/present.png"
+      surpriseSrc="/doge.webp"
+      surpriseText="you pressed a button very impressed, such wow, much skill!"
+    ></Example>
+  </StyledBackground>
+</Story>

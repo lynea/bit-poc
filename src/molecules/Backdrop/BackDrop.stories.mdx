@@ -1,0 +1,14 @@
+import { Meta, Story } from "@storybook/addon-docs/blocks";
+import BackDrop from "./BackDrop.component.tsx";
+
+<Meta
+  title="Molecules/BackDrop"
+  component={BackDrop}
+  argTypes={{ active: { control: "boolean" } }}
+/>
+
+export const Template = (args) => <BackDrop {...args} />;
+
+<Story name="Default" args={{ active: true }}>
+  {Template.bind({})}
+</Story>
